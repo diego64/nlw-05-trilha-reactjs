@@ -41,7 +41,7 @@ export default function Episode({ episode }: EpisodeProps) {
                     objectFit="cover"
                 />
                 <button type="button">
-                    <img src="/play.svg" alt="Tocar episódio" />
+                    <img src="/play.svg" alt="Tocar episódio" />  
                 </button>
            </div>
 
@@ -61,6 +61,13 @@ export default function Episode({ episode }: EpisodeProps) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
+    const { data } = await api.get('episodes', {
+        params: {
+            _limit: 2,
+            _sort: 'published_at',
+            _order: 'desc'
+        }
+    })
     return {
         paths: [],
         fallback: 'blocking'
