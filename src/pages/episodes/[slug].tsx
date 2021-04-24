@@ -2,6 +2,7 @@ import { format, parseISO } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 import { api } from '../../services/api';
@@ -9,6 +10,7 @@ import { convertDurationToTimeString } from '../../utils/convertDurationToTimeSt
 
 import styles from './episode.module.scss';
 import { usePlayer } from '../../contexts/PlayerContext';
+
 
 type Episode = {
     id: string;
@@ -27,12 +29,14 @@ type EpisodeProps = {
 }
 
 export default function Episode({ episode }: EpisodeProps) { 
-
-    const { play } = usePlayer();
+   const { play } = usePlayer();
 
    return (
        <div className={styles.episode}>
            <div className={styles.thumbnailContainer}>
+               <Head>
+                   <title>{episode.title} | Podcastr</title>
+               </Head>
                <Link href="/">
                   <button type="button">
                       <img src="/arrow-left.svg" alt="Voltar" />
