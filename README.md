@@ -6,8 +6,8 @@
   <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>
-
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-license">License</a>
 </p>
 
 <p align="center">
@@ -37,7 +37,7 @@ This project was developed using the following technologies:
 Clone the project and access the folder
 
 ```bash
-$ git clone https://github.com/C0bal/reactjs-podcastr-nlw5 && cd reactjs-podcastr-nlw5
+$ git clone https://github.com/diego64/nlw-05-trilha-reactjs && cd reactjs-podcastr-nlw5
 ```
 
 Follow the steps below
@@ -63,7 +63,6 @@ You can view the project layout through the links below:
 - [Layout Web](https://www.figma.com/file/UwFEntsHpHYJlHNQAQr4gA/Podcastr?node-id=160%3A2761)
 
 Remembering that you need to have a [Figma](http://figma.com/) account to access it.
-
 ---
 
 <p align="center">Projected by Diego Ferreira L.G.Oliveira</p>
